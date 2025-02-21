@@ -15,7 +15,9 @@ Our model demonstrates significant improvements across 5 TCGA datasets compared 
 
 ## Environment Setup
 - **PyTorch 2.0.1**
-- Pretrained feature extractor: [RetCCL](https://github.com/Xiyue-Wang/RetCCL)
+
+##Dataset Preparation
+- Pretrained WSI feature extractor: [RetCCL](https://github.com/Xiyue-Wang/RetCCL)
 - Genetic mutation features are provided in `M4_csv/` directory:
   - `10genes/`: Multi-task dataset
   - `1gene/`: Single-task dataset
@@ -30,3 +32,19 @@ cd M4
 ```bash
 sh scripts/M4-main.sh
 ```
+## Repository Structure
+├── M4_csv/                 # Genetic mutation data
+│   ├── 10genes/           # Multi-task dataset
+│   └── 1gene/             # Single-task dataset
+├── models/                #models
+│   ├── M4.py   
+│   └── MMoE.py
+│   └── AMIL.py
+├── scripts/               # Execution scripts
+│   └── M4-main.sh   
+│   └── MMoE.sh
+│   └── AMIL.sh
+├── main.py
+├── Dataset.py
+├── scheduler.py
+├── train_val_multi.py
