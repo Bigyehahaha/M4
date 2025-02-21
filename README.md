@@ -37,19 +37,3 @@ cd M4
 ```bash
 sh scripts/M4-main.sh
 ```
-## Repository Structure
-├── M4_csv/                 # Genetic mutation data
-│   ├── 10genes/           # Multi-task dataset
-│   └── 1gene/             # Single-task dataset
-├── models/                #models
-│   ├── M4.py   
-│   └── MMoE.py
-│   └── AMIL.py
-├── scripts/               # Execution scripts
-│   └── M4-main.sh   
-│   └── MMoE.sh
-│   └── AMIL.sh
-├── main.py
-├── Dataset.py
-├── scheduler.py
-├── train_val_multi.py
