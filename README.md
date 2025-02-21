@@ -3,8 +3,13 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0.1-%23EE4C2C.svg)](https://pytorch.org/)
 
 Official implementation of **M4: Multi-Proxy Multi-Gate Mixture of Experts Network for Multiple Instance Learning in Histopathology Image Analysis**
+## Model Architecture
+<div align="center">
+  <img src="Overview_of_M4_Workflow.png" width="80%">
+  <p>Figure：Overview of M4 Workflow</p>
+</div>
 
-## Abstract
+## Abstrct
 Multiple instance learning (MIL) has been successfully applied for whole slide images (WSIs) analysis in computational pathology, enabling various prediction tasks from tumor subtyping to inferring genetic mutations and multi-omics biomarkers. However, existing MIL methods predominantly focus on single-task learning, resulting in both low efficiency and oversight of inter-task relatedness. 
 
 To address these limitations, we propose M4 - a novel architecture featuring:
