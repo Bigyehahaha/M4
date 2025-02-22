@@ -258,10 +258,8 @@ def main(args):
         slide_test, label_test = test_indices_df['test_indices'].tolist(), test_label_indices_df[
             'test_indices_label'].tolist()
 
-        if args.multi is True:
-            test_data = Dataset_multi(args=args, fts_path=slide_test, fts_label=label_test)
-        else:
-            test_data = Dataset_single(args=args, fts_path=slide_test, fts_label=label_test)
+
+        test_data = Datasets(args=args, fts_path=slide_test, fts_label=label_test)
 
         batch_size = args.batch_size
         nw = min([os.cpu_count(), batch_size if batch_size > 1 else 0, 8])
